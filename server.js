@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 
-app.use(express.raw({ type: 'audio/wav', limit: '10mb' }));
+app.use(express.raw({ type: 'audio/wav', limit: '200mb' }));
 
 // Upload endpoint
 app.post('/upload', (req, res) => {
